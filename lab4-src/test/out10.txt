@@ -1,0 +1,100 @@
+Thread 10 calls try_read_lock. 
+  Thread 10 try_read_lock returns 0. 
+Thread 5 calls write_to_read. 
+  Thread 5 write_to_read returns 4. 
+Thread 4 calls try_write_lock. 
+  Thread 4 try_write_lock returns 5. 
+Thread 3 calls write_lock. 
+Thread 6 calls write_to_read. 
+  Thread 6 write_to_read returns 4. 
+Thread 2 calls read_lock. 
+Thread 4 calls try_write_lock. 
+  Thread 4 try_write_lock returns 5. 
+Thread 10 calls read_lock. 
+  Thread 10 read_lock returns 1. 
+Thread 8 calls write_unlock. 
+  Thread 8 write_unlock returns 4. 
+Thread 4 calls write_unlock. 
+  Thread 4 write_unlock returns 4. 
+Thread 7 calls read_lock. 
+Thread 8 calls write_lock. 
+Thread 5 calls write_to_read. 
+  Thread 5 write_to_read returns 4. 
+Thread 9 calls write_unlock. 
+  Thread 9 write_unlock returns 4. 
+Thread 1 calls write_to_read. 
+  Thread 1 write_to_read returns 4. 
+Thread 4 calls read_lock. 
+Thread 5 calls read_lock. 
+Thread 1 calls write_lock. 
+Thread 10 calls try_read_lock. 
+  Thread 10 try_read_lock returns 1. 
+Thread 10 calls read_unlock. 
+  Thread 10 read_unlock returns 0. 
+  Thread 3 write_lock returns 0. 
+Thread 9 calls write_unlock. 
+  Thread 9 write_unlock returns 4. 
+Thread 6 calls write_unlock. 
+  Thread 6 write_unlock returns 4. 
+Thread 6 calls write_lock. 
+Thread 10 calls write_lock. 
+Thread 3 calls write_unlock. 
+  Thread 3 write_unlock returns 0. 
+  Thread 2 read_lock returns 0. 
+  Thread 7 read_lock returns 0. 
+Thread 3 calls try_read_lock. 
+  Thread 3 try_read_lock returns 5. 
+Thread 3 calls read_unlock. 
+  Thread 3 read_unlock returns 3. 
+Thread 3 calls write_unlock. 
+  Thread 3 write_unlock returns 4. 
+Thread 7 calls write_lock. 
+  Thread 7 write_lock returns 1. 
+Thread 7 calls write_to_read. 
+  Thread 7 write_to_read returns 4. 
+Thread 2 calls read_lock. 
+  Thread 2 read_lock returns 1. 
+Thread 3 calls write_lock. 
+Thread 2 calls write_lock. 
+  Thread 2 write_lock returns 1. 
+Thread 2 calls read_lock. 
+  Thread 2 read_lock returns 1. 
+Thread 7 calls read_unlock. 
+  Thread 7 read_unlock returns 0. 
+Thread 9 calls read_lock. 
+Thread 2 calls read_lock. 
+  Thread 2 read_lock returns 1. 
+Thread 2 calls write_unlock. 
+  Thread 2 write_unlock returns 4. 
+Thread 7 calls write_lock. 
+Thread 2 calls try_read_lock. 
+  Thread 2 try_read_lock returns 1. 
+Thread 2 calls write_lock. 
+  Thread 2 write_lock returns 1. 
+Thread 2 calls read_unlock. 
+  Thread 2 read_unlock returns 0. 
+  Thread 8 write_lock returns 0. 
+Thread 8 calls write_unlock. 
+  Thread 8 write_unlock returns 0. 
+  Thread 4 read_lock returns 0. 
+  Thread 5 read_lock returns 0. 
+Thread 4 calls read_unlock. 
+  Thread 4 read_unlock returns 0. 
+Thread 5 calls read_unlock. 
+  Thread 5 read_unlock returns 0. 
+  Thread 1 write_lock returns 0. 
+Thread 1 calls write_unlock. 
+  Thread 1 write_unlock returns 0. 
+  Thread 6 write_lock returns 0. 
+Thread 6 calls write_unlock. 
+  Thread 6 write_unlock returns 0. 
+  Thread 10 write_lock returns 0. 
+Thread 10 calls write_unlock. 
+  Thread 10 write_unlock returns 0. 
+  Thread 3 write_lock returns 0. 
+Thread 3 calls write_unlock. 
+  Thread 3 write_unlock returns 0. 
+  Thread 9 read_lock returns 0. 
+Thread 9 calls read_unlock. 
+  Thread 9 read_unlock returns 0. 
+  Thread 7 write_lock returns 0. 

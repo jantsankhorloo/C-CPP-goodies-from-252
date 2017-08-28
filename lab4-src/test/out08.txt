@@ -1,0 +1,26 @@
+Thread 1 calls read_lock. 
+  Thread 1 read_lock returns 0. 
+Thread 1 calls try_read_lock. 
+  Thread 1 try_read_lock returns 1. 
+Thread 2 calls try_write_lock. 
+  Thread 2 try_write_lock returns 5. 
+Thread 1 calls read_unlock. 
+  Thread 1 read_unlock returns 0. 
+Thread 2 calls try_write_lock. 
+  Thread 2 try_write_lock returns 0. 
+Thread 2 calls try_read_lock. 
+  Thread 2 try_read_lock returns 2. 
+Thread 3 calls read_lock. 
+Thread 2 calls try_write_lock. 
+  Thread 2 try_write_lock returns 2. 
+Thread 2 calls write_unlock. 
+  Thread 2 write_unlock returns 0. 
+  Thread 3 read_lock returns 0. 
+Thread 3 calls try_write_lock. 
+  Thread 3 try_write_lock returns 1. 
+Thread 1 calls try_read_lock. 
+  Thread 1 try_read_lock returns 0. 
+Thread 1 calls read_unlock. 
+  Thread 1 read_unlock returns 0. 
+Thread 3 calls read_unlock. 
+  Thread 3 read_unlock returns 0. 

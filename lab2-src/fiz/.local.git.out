@@ -1,0 +1,88 @@
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+	.local.git.out
+
+nothing added to commit but untracked files present
+[master 1915adb] Commit
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 4084 insertions(+)
+ create mode 100644 fiz/fizcode.f
+ create mode 100644 fiz/lex.yy.c
+ create mode 100644 fiz/y.tab.c
+ create mode 100644 fiz/y.tab.h
+[master e6f66dc] Commit
+ Committer: Jantsankhorloo Amgalan <jamgalan@borg07.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 7 insertions(+), 7 deletions(-)
+[master d6078c4] Commit
+ Committer: Jantsankhorloo Amgalan <jamgalan@borg07.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+[master ab5fd2d] Commit
+ Committer: Jantsankhorloo Amgalan <jamgalan@borg07.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+[master aa565e5] Commit
+ Committer: Jantsankhorloo Amgalan <jamgalan@sslab08.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 1 insertion(+), 4046 deletions(-)
+ delete mode 100644 fiz/lex.yy.c
+ delete mode 100644 fiz/y.tab.c
+ delete mode 100644 fiz/y.tab.h

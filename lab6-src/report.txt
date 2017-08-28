@@ -1,0 +1,33 @@
+Teammates:
+(Full Name, Login)
+Jantsankhorloo Amgalam, jamgalan
+Kenny Zheng, zheng323
+Weichu Hu, hu353
+
+Initial Assumption:
+When the game starts, we assume that there are already 2 processes running; 1 pid for our program and 1 pid for the enemy's program. As both our strategies for arena 1 and 2 are based on this assumption, we start with killing all the processes in the arena that is not our own initial starting process. Then we fork in an infinite loop. The reason we believe this strategy works is because at the start of the game, we kill the enemy process immediately. This will result in our program killing the enemy parent processor at the beginning, which makes the enemy processor unable to fork any more child later on in the game.
+
+Also, to gain some speed, we tried to optimize our code and make it shorter by reducing unnecessary include libraries and variable declarations. 
+
+Strategy:
+Basing on our assumptions, we proceed with KILL everything (i.e. that is not our process) first and then FORK method.
+
+Arena 1:
+Firstly, we pick up our own running pid with getpid() call. Then with kvm_getprocs() API call, we collect every pid's in the arena. As long as the pids in the arena do not match with getpid(), we kill it. After that we fork in an infinite loop.
+
+Arena 2:
+This follows the same principle as arena 1 strategy. But we start off with setproctitle() call to rename our process name, in order for us to know which is exactly our own and not kill it. Then we save the id = getpid() process name (i.e. ki_comm) in a variable. Again by using kvm_getprocs API we get all the processes in the arena and fetch their name from the struct with ki_comm. As long as any ki_comm does not match our process name, we kill that corresponding process with kill(pid, SIGKILL).
+
+And then we fork() in an infinite loop. But right before we fork, we reset our process name back to our actual executable name with another setproctitle() call.
+
+Prediction/Experimental results:
+For both arenas, majority of the time our programs get 100. However, with update.tar loaded, we observed that the game results have become much more stable and consistently resulted 100 for our programs. However, as we expanded our experiment, we found out that our programs will always win as long as our program has the faster running speed, with that being said, if our enemy signal the kill command before us, we would not stand a chance. Therefore, we tried to optimize our program as much as possible by reducing the library size and optimizing our code.
+
+Ideas initially explored:
+1. Our team thought, if it is possible to inject code into the enemy executable. We trace which one is the enemy exectuble from its pid. And with system() call, we could do an attack on the enemy code, with code injection and file corruption.
+
+2. Also we explored that if we could have our program sleep for 8 or 9 seconds of the 10 seconds arena running time. It is based on the notion that for the duration of all 10 seconds, enemy is forking and killing while we also do the same. It is repeated for 10 seconds. So if our program would attack in the last second, kill everything that are enemy's, and fork right before the arena time finished, then our program could get upperhand. This idea was dropped, as it did not work perfectly for the most part and failed to produce 100.
+
+3. Due to the fact that speed is crucial in this game, we attempted to create multiple threads, where one thread will be focusing on killing the enemy processors and another thread focusing on forking more processors.
+
+

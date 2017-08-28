@@ -1,0 +1,5 @@
+Features that work: ctrl-c, exit, builtins, wildcarding, zombie elimination, quotes, escaping, environment variable expansion, tilde expansion, isatty()
+
+Features that do not work: Edit mode, history, subshells
+
+Extra Features: None

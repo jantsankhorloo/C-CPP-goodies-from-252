@@ -1,0 +1,24 @@
+Thread 1 calls read_lock. 
+  Thread 1 read_lock returns 0. 
+Thread 2 calls read_lock. 
+  Thread 2 read_lock returns 0. 
+Thread 3 calls read_lock. 
+  Thread 3 read_lock returns 0. 
+Thread 4 calls write_lock. 
+Thread 1 calls read_lock. 
+  Thread 1 read_lock returns 1. 
+Thread 5 calls read_unlock. 
+  Thread 5 read_unlock returns 3. 
+Thread 3 calls write_lock. 
+  Thread 3 write_lock returns 1. 
+Thread 3 calls write_unlock. 
+  Thread 3 write_unlock returns 4. 
+Thread 3 calls read_unlock. 
+  Thread 3 read_unlock returns 0. 
+Thread 2 calls read_unlock. 
+  Thread 2 read_unlock returns 0. 
+Thread 1 calls read_unlock. 
+  Thread 1 read_unlock returns 0. 
+  Thread 4 write_lock returns 0. 
+Thread 4 calls write_unlock. 
+  Thread 4 write_unlock returns 0. 

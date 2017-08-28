@@ -1,0 +1,4 @@
+flix part4                          : -2  of 15 
+/homes/cs252/Spring2017/lab2-test/rfliz intlist : 0   of 3  
+/homes/cs252/Spring2017/lab2-test/rfliz reverse : 0   of 4  
+/homes/cs252/Spring2017/lab2-test/rfliz recreverse : 0   of 3  
