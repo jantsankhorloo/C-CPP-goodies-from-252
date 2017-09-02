@@ -1,5 +1,44 @@
-Features that work: ctrl-c, exit, builtins, wildcarding, zombie elimination, quotes, escaping, environment variable expansion, tilde expansion, isatty()
+How-To
+======
 
-Features that do not work: Edit mode, history, subshells
+Build the shell program by typing :
+```
+make
+```
 
-Extra Features: None
+```
+shell
+```
+Then type commands like:
+```
+ls aaaa | grep cccc | grep jjjj ssss dfdffdf >>& out < in
+ls -al | grep command
+ls -al | grep command | grep command.o
+ls -al | grep command
+ls -al | grep command | grep command.o > out
+cat out
+```
+
+Features:
+=========
+
+- Process Creation
+- Command Execution
+- File Redirection
+- Pipes
+- Background
+- Ignore Ctrl-C
+- Wild Card Expansion
+- Elimination of Zombie Processes
+- Allow quotes and escape characters
+- Enviroment variable expansion
+- Tilde expansion
+- Line editor
+- History
+- Subshells
+- cd
+- setenv
+- unsetenv
+- printenv
+- exit
+- clear
