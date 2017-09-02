@@ -10,6 +10,17 @@ This directory includes the following subdirectoris and files:
 2. rfliz  is a binary for FLIZ interpreter, built on data.cs
 3. tf1.f to tf4.f are test files for FLIZ
 
+### FLIZ Language
+
+#### Builtin Functions
+| Function | Description |
+| -------- | ----------- |
+| `head`    | Returns the 1st element of a list. |
+| `tail`    | Returns the last element of a list. |
+| `list`    | Concatenates 2 lists. |
+| `ifn`   | Checks if the 1st list is NULL, if yes return 2nd list. If not return the 3 list. |
+| `ifa`   | Checks if the 1st list is just atomic, if yes return 2nd list. If not return the 3 list. |
+
 ### FIZ Language
 
 #### Builtin Functions
