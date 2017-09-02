@@ -1,4 +1,5 @@
 ### Directory Structures
+
 This directory includes the following subdirectoris and files:
 1. ./fiz   includes source code for the FIZ interpreter and test files for FIZ
    ./fiz/fiz.l      LEX file
@@ -20,7 +21,6 @@ This directory includes the following subdirectoris and files:
 | `halt`   | Accepts no arguments. Terminates the interpreter. |
 
 #### Example Scripts
-*The following scripts were taken from the course web-page*
 
 ```
 (dec
